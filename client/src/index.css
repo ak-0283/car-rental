@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Lora", sans-serif;
 }
-:root{
-  --text-color-1:#000000;
-  --text-color-2:#fc7703;
-  --text-color-3:#ffffff;
-  --text-color-4:#ccd7e6;
-  --text-color-5:#ababab;
+:root {
+  --text-color-1: #000000;
+  --text-color-2: #fc7703;
+  --text-color-3: #ffffff;
+  --text-color-4: #ccd7e6;
+  --text-color-5: #ababab;
 }
 body {
   margin: 0;
@@ -21,6 +23,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

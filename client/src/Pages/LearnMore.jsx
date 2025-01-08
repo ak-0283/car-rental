@@ -1,6 +1,15 @@
 // LearnMore.jsx
 import React from 'react';
-import { Clock, Car, MapPin, CreditCard, Search, Calendar, Key, ThumbsUp } from 'lucide-react';
+import {
+  Clock,
+  Car,
+  MapPin,
+  CreditCard,
+  Search,
+  Calendar,
+  Key,
+  ThumbsUp,
+} from "lucide-react";
 import './LearnMore.css';
 import Footer from '../components/Footer/Footer';
 import {useNavigate} from 'react-router-dom';

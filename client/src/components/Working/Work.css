@@ -17,12 +17,11 @@
     margin: 0 0 2rem 0;
 }
 
-
 .w-d{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    align-items: center;
+    align-items: flex-start; 
     justify-content: center;
     overflow-x: hidden;
 }
@@ -33,8 +32,11 @@
 .s-c{
     display: flex;
     align-items: center;
-    justify-content: center;flex-direction: column;
+    justify-content: flex-start;flex-direction: column;
     row-gap: 1rem;
+    width: calc(25% - 2rem); 
+    max-width: 250px; 
+    text-align: center;
 }
 
 .ic{
@@ -53,4 +55,14 @@
 .h-t{
     font-size: 1.2rem;
     font-weight: 600;
+    word-wrap: break-word;
+    line-height: 1.5;
+    white-space: normal; 
+}
+
+.payment,
+.p-d,
+.p-u,
+.s-c {
+    min-height: 200px;
 }

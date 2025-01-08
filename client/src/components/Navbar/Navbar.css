@@ -90,6 +90,24 @@
     color: var(--text-color-3);
 }
 
+.log-out {
+    font-size: 0.938rem;
+    color: var(--text-color-1);
+    background: transparent;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0.125rem solid var(--text-color-2);
+    transition: all .4s ease;
+}
+
+.log-out:hover {
+    background: var(--text-color-2);
+    color: var(--text-color-3);
+}
+
+
 .burger {
     position: relative;
     display: block;

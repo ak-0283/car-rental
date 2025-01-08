@@ -37,7 +37,7 @@ const Work = () => {
               <FaCalendarAlt />
             </span>
             <div className="h-t">
-                <p>Choose pick up  drop off date</p>
+                <p>Choose pick up & drop off date</p>
             </div>
           </div>
           

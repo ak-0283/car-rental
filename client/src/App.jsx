@@ -6,10 +6,12 @@ import Testimonials from "./Pages/Testimonials";
 import Navbar from "./components/Navbar/Navbar";
 import Team from "./Pages/Team";
 import Contact from "./Pages/Contact";
-import Errorpage from "./Pages/Errorpage"; 
-import Login from "./components/Auth/Login"
+import Errorpage from "./Pages/Errorpage";
+import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import LearnMore from "./Pages/LearnMore";
+import Booking from "./components/Booking/Booking";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 function App() {
   return (
@@ -22,10 +24,19 @@ function App() {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Errorpage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register/>} />
-        <Route path ="/learnmore" element={<LearnMore/>} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/learnmore" element={<LearnMore />} />
+        <Route path="*" element={<Errorpage />} />
+
+        <Route
+          path="/booking"
+          element={
+            <ProtectedRoute>
+              <Booking />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
