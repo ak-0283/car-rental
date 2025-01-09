@@ -50,7 +50,6 @@ const Home = () => {
       <Footer />
 
 
-      {/* Scroll to Top Button */}
       <button
         id="scrollButton"
         onClick={scrollToTop}
